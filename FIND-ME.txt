@@ -1,0 +1,23 @@
+=================================================================
+  MISSION DATA GRID - REPOSITORY LOCATION
+=================================================================
+
+ABSOLUTE PATH: /Users/joshua.giles/net-mdg
+
+QUICK NAVIGATION:
+  cd /Users/joshua.giles/net-mdg
+
+OR USE THE ALIAS (after running: source ~/.zshrc):
+  find-mdg
+
+START COMMANDS:
+  Terminal 1: ./start-backend.sh    (needs sudo)
+  Terminal 2: ./start-frontend.sh   (npm run dev)
+  Terminal 3: ./start-simulator.sh  (no sudo needed)
+
+BROWSER URL: http://localhost:5173
+
+If you ever lose this folder, run:
+  find /Users/joshua.giles -name "net-mdg" -type d 2>/dev/null
+
+=================================================================

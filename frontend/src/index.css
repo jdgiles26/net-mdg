@@ -3,12 +3,33 @@
 @tailwind utilities;
 
 body {
-  background-color: #020617; /* slate-950 */
-  color: #22d3ee; /* cyan-400 */
+  background-color: #020617;
+  color: #22d3ee;
   margin: 0;
   min-height: 100vh;
 }
 
 #root {
   min-height: 100vh;
+}
+
+/* Dark theme scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #164e63;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0e7490;
+}
+
+/* Recharts overrides */
+.recharts-text {
+  fill: #475569 !important;
+  font-size: 10px;
 }

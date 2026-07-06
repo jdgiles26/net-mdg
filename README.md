@@ -1,6 +1,6 @@
-# Mission Data Grid (MDG)
+#mdg
 
-A real-time network packet interception, analytics, and intelligence platform designed as a companion tool for **AutoNet** network operations. MDG provides monitoring, threat detection, obfuscation visibility, and health tracking across active mission channels.
+A real-time network packet interception, analytics, and intelligence platform designed as a companion tool for *Net* network operations. MDG provides monitoring, threat detection, obfuscation visibility, and health tracking across active mission channels.
 
 ## Architecture
 
@@ -20,7 +20,7 @@ A real-time network packet interception, analytics, and intelligence platform de
 └───────────────────────┬───────────────────────────────────────┘
                         │ Direct Reporting + UDP
 ┌───────────────────────┴───────────────────────────────────────┐
-│                  AUTONET SIMULATOR (6 Missions)                │
+│                  NET SIMULATOR (6 Missions)                │
 │  OP-VALKYRIE · OP-AEGIS · OP-PHANTOM · OP-SENTINEL           │
 │  OP-HARBINGER · OP-ECLIPSE                                    │
 └───────────────────────────────────────────────────────────────┘
@@ -48,7 +48,7 @@ Press `Ctrl+C` to stop all services.
 ## Dashboard Tabs
 
 ### COMMAND
-Live mission intent viewer and real-time packet stream visualizer. Shows all active AutoNet intents with priority levels, packet counts, and a color-coded bar visualization of intercepted packets.
+Live mission intent viewer and real-time packet stream visualizer. Shows all active Net intents with priority levels, packet counts, and a color-coded bar visualization of intercepted packets.
 
 ### ANALYTICS
 Aggregate statistics with live throughput area chart. Tracks total packets, data volume, throughput (B/s), packet rate (pkt/s), active missions, and uptime. Includes per-mission breakdown cards.
@@ -88,7 +88,7 @@ Chronological mission event log. Color-coded by severity with event type badges 
 
 | Endpoint | Method | Description |
 |----------|--------|-------------|
-| `/intercept/autonet` | POST | Register a mission intent |
+| `/intercept/net` | POST | Register a mission intent |
 | `/report/packet` | POST | Direct packet reporting (bypasses sniffer) |
 | `/ws/grid` | WebSocket | Real-time data stream (intents, packets, analytics, threats, health, timeline) |
 | `/docs` | GET | Interactive API documentation |
